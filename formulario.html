@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inicio">
+    <link rel="stylesheet" href="./estilo.css/form.css">
+    <title>formulario</title>
+</head>
+<body>
+
+    <h1>Formulario de contacto</h1>
+    
+    <fieldset>
+       <legend>formulario web</legend>
+       <form name=" contacto" method="get">
+    <label for="nombre">NOMBRE:</Label>
+    <input type="text" name="nombre" id="nombre" placeholder="Introduzca sus nombre" required>
+    <span class="invalido">*El nombre es requerido</span>
+    <label for="apellidos"> APELLIDOS:</label>
+    <input type="text" name="apellidos" id="apellidos" placeholder="Introduzca sus apellidos">
+    <label for="email"> EMAIL:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="telefono">TELEFONO:</label>
+    <input type="tel" name="telefono" id="telefono">
+    <label for="departamentos">DEPARTAMENTOS:</label>
+         <input name="departamentos" list="departamentos" placeholder="Elija un departamento" />
+         <datalist id="departamentos">
+       <option>Chalatenango</option>
+       <option>Ahuchapan</option>
+       <option>Santa Ana</option>
+       <option>Sonsonate</option>
+       <option>La Libertad</option>
+       <option>San Salvador</option>
+       <option>Cuscatlan</option>
+       <option>Cabañas</option>
+       <option>San Vicente</option>
+       <option>La paz</option>
+       <option>Usulutan</option>
+       <option>San Miguel</option>
+       <option>Morazan</option>
+       <option>La Union</option>
+    </datalist>
+   <label for="edad">EDAD:</label>
+    <input type="number" name="edad" id="edad" min="18" max="50" required>
+    <label for="fnac">FECHA DE NACIMIENTO:
+        <input type="date" name="fnac" id="fnac" min="1996-01.01" max="2022-03-01">
+        <div>
+            <input type="submit" value="ENVIAR" id="enviar">
+        </div>
+
+     </form>
+    <fieldset>
